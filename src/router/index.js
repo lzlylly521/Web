@@ -51,22 +51,42 @@ const router = createRouter({
           component: Accountinformation
         },
         {
-          path: '/Accountevaluation',
+          path: 'Accountevaluation',
           name: 'Accountevaluation',
           component: Accountevaluation
         },
         {
-          path: '/Workerinformation',
+          path: 'Workerinformation',
           name: 'Workerinformation',
           component: Workerinformation
         },
         {
-          path: '/Workerevaluation',
+          path: 'Workerevaluation',
           name: 'Workerevaluation',
           component: Workerevaluation
         },
         {
-          path: '/Workersalary',
+          path: 'Workersalary',
+          name: 'Workersalary',
+          component: Workersalary
+        },
+        {
+          path: 'Workersalary',
+          name: 'Workersalary',
+          component: Workersalary
+        },
+        {
+          path: 'Workersalary',
+          name: 'Workersalary',
+          component: Workersalary
+        },
+        {
+          path: 'Workersalary',
+          name: 'Workersalary',
+          component: Workersalary
+        },
+        {
+          path: 'Workersalary',
           name: 'Workersalary',
           component: Workersalary
         }
