@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import TableInformationVue from '@/components/TableInformation.vue'
+</script>
 <template>
-  <span :span="16">用户评价</span>
+  <div>用户评价</div>
+  <div><TableInformationVue /></div>
 </template>

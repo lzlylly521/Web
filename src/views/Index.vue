@@ -1,5 +1,6 @@
 <script setup>
 import WebNav from '@/components/WebNav.vue'
+import DownNavVue from '@/components/DownNav.vue'
 </script>
 <template>
   <div>
@@ -81,6 +82,7 @@ import WebNav from '@/components/WebNav.vue'
       /></el-col>
     </el-row>
   </div>
+  <div><DownNavVue /></div>
 </template>
 <style scoped></style>
 <!-- this is Index page -->

@@ -17,6 +17,12 @@ import Accountevaluation from '@/views/manager_page/Accountevaluation.vue'
 import Workerinformation from '@/views/manager_page/Workerinformation.vue'
 import Workerevaluation from '@/views/manager_page/Workerevaluation.vue'
 import Workersalary from '@/views/manager_page/Workersalary.vue'
+import Forminformation from '@/views/manager_page/Forminformation.vue'
+import Managerinformation from '@/views/manager_page/Managerinformation.vue'
+import Loginformation from '@/views/manager_page/Loginformation.vue'
+import Income from '@/views/manager_page/Income.vue'
+import Serve from '@/views/Serve.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -71,24 +77,24 @@ const router = createRouter({
           component: Workersalary
         },
         {
-          path: 'Workersalary',
-          name: 'Workersalary',
-          component: Workersalary
+          path: 'Forminformation',
+          name: 'Forminformation',
+          component: Forminformation
         },
         {
-          path: 'Workersalary',
-          name: 'Workersalary',
-          component: Workersalary
+          path: 'Managerinformation',
+          name: 'Managerinformation',
+          component: Managerinformation
         },
         {
-          path: 'Workersalary',
-          name: 'Workersalary',
-          component: Workersalary
+          path: 'Loginformation',
+          name: 'Loginformation',
+          component: Loginformation
         },
         {
-          path: 'Workersalary',
-          name: 'Workersalary',
-          component: Workersalary
+          path: 'Income',
+          name: 'Income',
+          component: Income
         }
       ]
     },
@@ -108,24 +114,31 @@ const router = createRouter({
       component: Enroll
     },
     {
-      path: '/Serve/Administrative',
-      name: 'Administrative',
-      component: Administrative
-    },
-    {
-      path: '/Serve/Company',
-      name: 'Company',
-      component: Company
-    },
-    {
-      path: '/Serve/Custom',
-      name: 'Custom',
-      component: Custom
-    },
-    {
-      path: '/Serve/Family',
-      name: 'Family',
-      component: Family
+      path: '/Serve',
+      name: 'Serve',
+      component: Serve,
+      children: [
+        {
+          path: 'Administrative',
+          name: 'Administrative',
+          component: Administrative
+        },
+        {
+          path: 'Company',
+          name: 'Company',
+          component: Company
+        },
+        {
+          path: 'Custom',
+          name: 'Custom',
+          component: Custom
+        },
+        {
+          path: 'Family',
+          name: 'Family',
+          component: Family
+        }
+      ]
     },
 
     {
