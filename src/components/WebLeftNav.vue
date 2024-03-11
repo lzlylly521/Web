@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row class="tac">
-      <el-col :span="4">
+      <el-col>
         <el-menu
           active-text-color="#ffd04b"
           background-color="#545c64"
@@ -22,21 +22,33 @@
                   >用户信息管理</RouterLink
                 ></el-menu-item
               >
-              <el-menu-item index="1-2">用户评价信息管理</el-menu-item>
+              <el-menu-item index="1-2"
+                ><RouterLink to="/Manager/Accountevaluation"
+                  >用户评价信息管理</RouterLink
+                ></el-menu-item
+              >
             </el-menu-item-group>
             <el-menu-item-group title="Group Two">
-              <el-menu-item index="1-3">员工信息管理</el-menu-item>
-              <el-menu-item index="1-4">员工评价信息管理</el-menu-item>
-              <el-menu-item index="1-5">员工薪资信息管理</el-menu-item>
+              <el-menu-item index="1-3"
+                ><RouterLink to="/Manager/Workerinformation">员工信息管理</RouterLink></el-menu-item
+              >
+              <el-menu-item index="1-4"
+                ><RouterLink to="/Manager/Workerevaluation"
+                  >员工评价信息管理</RouterLink
+                ></el-menu-item
+              >
+              <el-menu-item index="1-5"
+                ><RouterLink to="/Manager/Workersalary">员工薪资信息管理</RouterLink></el-menu-item
+              >
             </el-menu-item-group>
           </el-sub-menu>
           <el-menu-item index="2">
             <el-icon><icon-menu /></el-icon>
-            <span>订单信息管理</span>
+            <span><RouterLink to="/Manager/Forminformation">订单信息管理</RouterLink></span>
           </el-menu-item>
           <el-menu-item index="3">
             <el-icon><icon-menu /></el-icon>
-            <span>管理员信息管理</span>
+            <span><RouterLink to="/Manager/Managerinformation">管理员信息管理</RouterLink></span>
           </el-menu-item>
           <el-sub-menu index="4">
             <template #title>
@@ -44,8 +56,12 @@
               <span>系统信息管理</span>
             </template>
             <el-menu-item-group title="Group One">
-              <el-menu-item index="4-1">日志信息管理</el-menu-item>
-              <el-menu-item index="4-2">收入信息管理</el-menu-item>
+              <el-menu-item index="4-1"
+                ><RouterLink to="/Manager/Loginformation">日志信息管理</RouterLink></el-menu-item
+              >
+              <el-menu-item index="4-2"
+                ><RouterLink to="/Manager/Income">收支信息管理</RouterLink></el-menu-item
+              >
             </el-menu-item-group>
           </el-sub-menu>
         </el-menu>
